@@ -426,4 +426,8 @@ img {
     section {
         padding: 100px 20px;
     }
+    
+    img {
+    max-width: 200%;
+}
 }
