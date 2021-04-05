@@ -174,7 +174,11 @@ header.sticky ul li a {
     min-width: 50%;
 }
 
-img {
+.img_normal {
+    max-width: 100%;
+}
+
+.img_subject {
     max-width: 100%;
 }
 
@@ -281,7 +285,7 @@ img {
     padding: 20px;
 }
 
-.subjects .content .subjectsbox img {
+.subjects .content .subjectsbox .img_subject {
     max-width: 100%;
 }
 
@@ -427,11 +431,15 @@ img {
         padding: 100px 20px;
     }
     
-    .img {
-    max-width: 100%;
+    .img_normal {
+        max-width: 100%;
     }
     
-    .subjects .content .subjectsbox img {
-    max-width: 200%;
+    .img_subject {
+        max-width: 200%;   
+    }
+    
+    .subjects .content .subjectsbox .img_subject {
+        max-width: 200%;
     }
 }
