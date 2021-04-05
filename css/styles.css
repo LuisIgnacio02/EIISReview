@@ -427,8 +427,8 @@ img {
         padding: 100px 20px;
     }
     
-    img {
-    max-width: 200%;
+    .img {
+    max-width: 100%;
     }
     
     .subjects .content .subjectsbox img {
