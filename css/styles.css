@@ -429,5 +429,9 @@ img {
     
     img {
     max-width: 200%;
-}
+    }
+    
+    .subjects .content .subjectsbox img {
+    max-width: 100%;
+    }
 }
