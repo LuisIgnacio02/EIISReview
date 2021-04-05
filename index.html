@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <title>EIIS Review: Second Edition</title>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">EIIS Review</a>
+            <div class="toggle" onclick="toggleMenu();">
+
+            </div>
+            <ul class="menu">
+                <li><a href="#" onclick="toggleMenu();">Inicio</a></li>
+                <li><a href="#instructions" onclick="toggleMenu();">Instrucciones</a></li>
+                <li><a href="#materias" onclick="toggleMenu();">Materias</a></li>
+                <li><a href="#contacto" onclick="toggleMenu();">Contáctanos</a></li>
+            </ul>
+        </header>
+        <section class="banner">
+            <div class="textbox">
+                <h2>¡Hola, <br><span>estudiante de salud</span>!</h2>
+                <h3>¿Listo para el siguiente EIIS?</h3>
+                <a class="repaso_button" href="#materias">¡A repasar!</a>
+            </div>
+        </section>
+        <section class="instructions" id="instructions">
+            <div class="heading">
+                <h2>Instrucciones</h2>
+            </div>
+            <div class="content">
+                <div class="contentBox w50">
+                    <h3>Recomendaciones</h3>
+                    <p>
+                        Recomendamos utilizar una PC debido a que se puede pasar el mouse sobre las tarjetas
+                        de preguntas para que se volteen y puedas ver la respuesta correcta con su explicación.
+                        En un dispositivo móvil o una tableta, puedes presionar la tarjeta; sin embargo, en
+                        algunos dispositivos esto no funciona.
+                    </p>
+                    <h3>¿Problemas?</h3>
+                    <p>
+                        ¿Encontraste una pregunta mal formulada, una respuesta incorrecta, una explicación
+                        confusa, una falla técnica, o simplemente quieres enviar tus preguntas?
+                    </p>
+                    <a class="repaso_button" href="#contacto">¡Contáctanos!</a>
+                </div>
+                <div class="w50">
+                    <img src="assets/temporal.jpg" class="img">
+                </div>
+            </div>
+        </section>
+        <section class="subjects" id="materias">
+            <div class="heading">
+                <h2>Materias disponibles</h2>
+            </div>
+            <div class="content">
+                <div class="subjectsbox">
+                    <a href="subjects/sistema_nervioso.html"><img src="assets/sistema_nervioso.jpg" alt="sistema_nervioso"></a>
+                </div>
+                <div class="subjectsbox">
+                    <a href="subjects/morfofisiologia_renal.html"><img src="assets/morfofisiologia_renal.jpg" alt="morfofisiologia_renal"></a>
+                </div>
+                <div class="subjectsbox">
+                    <a href="subjects/embriologia.html"><img src="assets/embriologia.jpg" alt="embriologia"></a>
+                </div>
+                <div class="subjectsbox">
+                    <a href="subjects/reproduccion_humana.html"><img src="assets/reproduccion_humana.jpg" alt="reproduccion_humana"></a>
+                </div>
+                <div class="subjectsbox">
+                    <a href="subjects/crecimiento_desarrollo.html"><img src="assets/crecimiento_desarrollo.jpg" alt="crecimiento_y_desarrollo"></a>
+                </div>
+                <div class="subjectsbox">
+                    <a href="subjects/desarrollo_emocional.html"><img src="assets/desarrollo_emocional.jpg" alt="desarrollo_emocional"></a>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contacto">
+            <div class="heading white">
+                <h2>Contáctanos</h2>
+                <p>Mándanos tus quejas, sugerencias y preguntas</p>
+            </div>
+            <div class="content">
+                <div class="contact_info">
+                    <h3>Información de contacto</h3>
+                    <div class="contact_info_box">
+                        <div class="box">
+                            <div class="icon">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div class="text">
+                                <h3>Dirección de correo</h3>
+                                <p>emisuno.tec@gmail.com</p>
+                                <p>Puedes enviarnos tus preguntas y nosotros las agregaremos</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="icon">
+                                <i class='bx bxl-google' ></i>
+                            </div>
+                            <div class="text">
+                                <h3>Drive</h3>
+                                <p>https://bit.ly/3dzbxlQ</p>
+                                <p>Puedes agregar tus preguntas directamente</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="formbox">
+                    <form action="mailto:emisuno.tec@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+                        <h3>Aporta una pregunta (actualmente deshabilitado)</h3>
+                        <input type="text" placeholder="Materia">
+                        <input type="text" placeholder="Semestre">
+                        <input type="text" placeholder="Pregunta">
+                        <textarea rows="6" placeholder="Respuestas (opcional; recuerda mencionar cuál es correcta)"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>Todos los derechos reservados - 2021</p>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
